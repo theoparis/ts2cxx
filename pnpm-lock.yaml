@@ -1,12 +1,12 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@types/chai': 4.2.16
+  '@types/chai': 4.3.0
   '@types/mocha': 8.2.2
   '@types/node': 14.14.41
   '@typescript-eslint/eslint-plugin': 4.22.0
   '@typescript-eslint/parser': 4.22.0
-  chai: 4.3.4
+  chai: 4.3.6
   commitizen: 4.2.4
   cz-conventional-changelog: 3.3.0
   eslint: 7.26.0
@@ -20,12 +20,12 @@ specifiers:
   typescript: 4.3.5
 
 devDependencies:
-  '@types/chai': 4.2.16
+  '@types/chai': 4.3.0
   '@types/mocha': 8.2.2
   '@types/node': 14.14.41
   '@typescript-eslint/eslint-plugin': 4.22.0_a0b3ef2f52ae5c0ef5ac64774fd9ad83
   '@typescript-eslint/parser': 4.22.0_eslint@7.26.0+typescript@4.3.5
-  chai: 4.3.4
+  chai: 4.3.6
   commitizen: 4.2.4
   cz-conventional-changelog: 3.3.0
   eslint: 7.26.0
@@ -243,6 +243,7 @@ packages:
   /@commitlint/load/12.1.1:
     resolution: {integrity: sha512-qOQtgNdJRULUQWP9jkpTwhj7aEtnqUtqeUpbQ9rjS+GIUST65HZbteNUX4S0mAEGPWqy2aK5xGd73cUfFSvuuw==}
     engines: {node: '>=v10'}
+    requiresBuild: true
     dependencies:
       '@commitlint/execute-rule': 12.1.1
       '@commitlint/resolve-extends': 12.1.1
@@ -327,8 +328,8 @@ packages:
       fastq: 1.8.0
     dev: true
 
-  /@types/chai/4.2.16:
-    resolution: {integrity: sha512-vI5iOAsez9+roLS3M3+Xx7w+WRuDtSmF8bQkrbcIJ2sC1PcDgVoA0WGpa+bIrJ+y8zqY2oi//fUctkxtIcXJCw==}
+  /@types/chai/4.3.0:
+    resolution: {integrity: sha512-/ceqdqeRraGolFTcfoXNiqjyQhZzbINDngeoAq9GoHa8PPK1yNzTaxWjA6BFWp5Ua9JpXEMSS4s5i9tS0hOJtw==}
     dev: true
 
   /@types/json-schema/7.0.6:
@@ -651,14 +652,15 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /chai/4.3.4:
-    resolution: {integrity: sha512-yS5H68VYOCtN1cjfwumDSuzn/9c+yza4f3reKXlE5rUg7SFcCEy90gJvydNgOYtblyf4Zi6jIWRnXOgErta0KA==}
+  /chai/4.3.6:
+    resolution: {integrity: sha512-bbcp3YfHCUzMOvKqsztczerVgBKSsEijCySNlHHbX3VG1nskvqjz5Rfso1gGwD6w6oOV3eI60pKuMOV5MV7p3Q==}
     engines: {node: '>=4'}
     dependencies:
       assertion-error: 1.1.0
       check-error: 1.0.2
       deep-eql: 3.0.1
       get-func-name: 2.0.0
+      loupe: 2.3.4
       pathval: 1.1.1
       type-detect: 4.0.8
     dev: true
@@ -1284,6 +1286,7 @@ packages:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -1799,6 +1802,12 @@ packages:
   /longest/2.0.1:
     resolution: {integrity: sha1-eB4YMpaqlPbU2RbcM10NF676I/g=}
     engines: {node: '>=0.10.0'}
+    dev: true
+
+  /loupe/2.3.4:
+    resolution: {integrity: sha512-OvKfgCC2Ndby6aSTREl5aCCPTNIzlDfQZvZxNUrBrihDhL3xcrYegTblhmEiCrg2kKQz4XsFIaemE5BF4ybSaQ==}
+    dependencies:
+      get-func-name: 2.0.0
     dev: true
 
   /lru-cache/6.0.0:
@@ -2514,6 +2523,7 @@ packages:
 
   /tsconfig-paths/3.9.0:
     resolution: {integrity: sha512-dRcuzokWhajtZWkQsDVKbWyY+jgcLC5sqJhg2PSgf4ZkH2aHPvaOY8YWGhmjb68b5qqTfasSsDO9k7RUiEmZAw==}
+    requiresBuild: true
     dependencies:
       '@types/json5': 0.0.29
       json5: 1.0.1
